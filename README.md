@@ -9,6 +9,6 @@ Predictions are done in the following fashion:
 For each day the features are lagged returns, up to 5 days. I simply use basic functionality of sklearn and keras to perform all the needed operations. Of course, the model is fitted only to training set.
 
 ***For Time Series Analysis :***
-First, I fit the ARMA type of model to training set. Then, I make one step predictions using first the training and then older predictions
+In similar fashion first, I fit the ARMA type of model to training set. Then, I make one step predictions using the training and test sets  
 
 
