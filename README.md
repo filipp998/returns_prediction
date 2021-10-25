@@ -11,6 +11,6 @@ For each day the features are 5 days lagged returns. I simply use basic function
 ***For Time Series Analysis :***
 Here the features are determined via examining ACF and PACF of the returns. Then I again firstly fit the ARMA type of model to training set and then make one step predictions using the training and test sets. Here comes a little fun: to make a "fair" competition between the ML and time series models we want them to perform the same exact task. The problem is that the data we used for ML algorithms is not suitable for ARMA model. So to accomplish this task I first fit ARMA model to the training set, then store coefficients and then manually (in a loop) compute new predictions using the test data and these coefficients by applying the mathematical formula of the ARMA model. In the process I also realize that white noise in the ARMA specification should have approximately the same variance as the returns in order not to overpower them and not to absolutely dominate anything.
 
-To summarize, this mini-project is intended to make the ***comparison*** between various models and their efficiencies **in specific forecasting method**.
+To summarize, this mini-project is intended to make the ***comparison*** between various models and their efficiencies **using the specific forecasting method**.
 
 
